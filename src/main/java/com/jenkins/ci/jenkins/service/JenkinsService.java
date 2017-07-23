@@ -17,7 +17,7 @@ public class JenkinsService {
 	
 	@RequestMapping(path="/test", method = RequestMethod.GET, produces = "application/json")
 	public Project getTest() {
-		return new Project("Test");
+		return new Project("Testing");
 	}
 
 }
