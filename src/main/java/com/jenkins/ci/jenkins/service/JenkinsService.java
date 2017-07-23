@@ -14,5 +14,10 @@ public class JenkinsService {
 	public Project getVesion() {
 		return new Project("1.0.0");
 	}
+	
+	@RequestMapping(path="/test", method = RequestMethod.GET, produces = "application/json")
+	public Project getTest() {
+		return new Project("Test");
+	}
 
 }
